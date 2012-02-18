@@ -1,0 +1,69 @@
+/* line 1, ../_sass/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../_sass/main.scss */
+body {
+  font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+  background: #fdf6e3;
+  color: #222;
+}
+
+/* line 12, ../_sass/main.scss */
+h1, h2 {
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+}
+
+/* line 17, ../_sass/main.scss */
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 48px;
+}
+
+/* line 23, ../_sass/main.scss */
+h2 {
+  font-size: 28px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+/* line 29, ../_sass/main.scss */
+p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+/* line 35, ../_sass/main.scss */
+a {
+  text-decoration: none;
+  color: #dc322f;
+}
+
+/* line 40, ../_sass/main.scss */
+a:hover {
+  color: #dc5654;
+}
+
+/* line 44, ../_sass/main.scss */
+#container {
+  background: #fff;
+  border-left: 2px solid #657b83;
+  border-right: 2px solid #657b83;
+  border-bottom: 2px solid #657b83;
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* line 54, ../_sass/main.scss */
+.code {
+  width: 750px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #002b36;
+}
