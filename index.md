@@ -2,14 +2,17 @@
 layout: main
 ---
 
+[wiki]: http://en.wikipedia.org/wiki/Luhn "Wikipedia: Luhn Algirithm"
+
 Luhn Algorithm
 ==============
 
 Problem
 -------
-The Luhn algorithm, also known as the "mod 10" algorithm, is a simple checksum
-formula used to validate a variety of identification numbers. Given a numeric
-input, the algorithm works as follows:
+The Luhn algorithm, also known as the "mod 10" algorithm (see
+[Wikipedia] [wiki]), is a simple checksum formula used to validate
+a variety of identification numbers. Given a numeric input, the
+algorithm works as follows:
 
   1. Counting from the check digit, which is the rightmost, and moving left,
      double the value of every second digit.
@@ -19,7 +22,6 @@ input, the algorithm works as follows:
 
   3. If the total modulo 10 is equal to 0 (if the total ends in zero) then the
      number is valid according to the Luhn formula; else it is not valid.
-
 
 Example
 -------
