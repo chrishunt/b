@@ -1,11 +1,9 @@
 ---
-layout: main
+layout: post
+title: Luhn Algorithm
 ---
 
-[wiki]: http://en.wikipedia.org/wiki/Luhn "Wikipedia: Luhn Algirithm"
-
-Luhn Algorithm
-==============
+[wiki]: http://en.wikipedia.org/wiki/Luhn "Wikipedia: Luhn Algorithm"
 
 Problem
 -------

@@ -47,7 +47,14 @@ a {
   &:hover { color: #dc5654; }
 }
 
+#avatar {
+  position: absolute;
+  top: 25px;
+  left: -80px;
+}
+
 #container {
+  position: relative;
   width: 800px;
   background: #fff;
   border-left: 2px solid #657b83;
