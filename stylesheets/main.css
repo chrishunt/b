@@ -49,29 +49,33 @@ p {
 }
 
 /* line 44, ../_sass/main.scss */
-a {
-  color: #dc322f;
+a, img, img a, a img {
   text-decoration: none;
 }
-/* line 47, ../_sass/main.scss */
+
+/* line 48, ../_sass/main.scss */
+a {
+  color: #dc322f;
+}
+/* line 50, ../_sass/main.scss */
 a:hover {
   color: #dc5654;
 }
 
-/* line 50, ../_sass/main.scss */
+/* line 53, ../_sass/main.scss */
 #avatar {
   position: absolute;
   top: 25px;
   left: -80px;
 }
 
-/* line 56, ../_sass/main.scss */
+/* line 59, ../_sass/main.scss */
 #container {
   margin: 0 auto;
   width: 1070px;
 }
 
-/* line 61, ../_sass/main.scss */
+/* line 64, ../_sass/main.scss */
 #content {
   margin: 0 auto;
   position: relative;

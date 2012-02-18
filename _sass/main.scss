@@ -41,9 +41,12 @@ p {
   margin-bottom: 27px;
 }
 
+a, img, img a, a img {
+  text-decoration: none;
+}
+
 a {
   color: #dc322f;
-  text-decoration: none;
   &:hover { color: #dc5654; }
 }
 
