@@ -19,19 +19,21 @@ namespace :jekyll do
 end
 
 namespace :compass do
-  desc 'Delete compass temporary files'
+  SASS_DIR = '_sass'
+
+  desc 'Delete compiled stylesheets'
   task :clean do
     system 'rm -rf stylesheets'
   end
 
-  desc 'Run the compass watch script'
-  task :watch do
-    system 'compass watch --sass-dir _sass'
-  end
-
   desc 'Compile sass scripts'
   task :compile => [:clean] do
-    system 'compass compile --sass-dir _sass'
+    system "compass compile --sass-dir #{SASS_DIR}"
+  end
+
+  desc 'Run the compass watch server'
+  task :server do
+    system "compass watch --sass-dir #{SASS_DIR}"
   end
 end
 
