@@ -47,8 +47,12 @@ a {
   &:hover { color: #dc5654; }
 
   img {
-    border: 0;
+    border: none;
   }
+}
+
+img {
+  border: none;
 }
 
 #avatar {
