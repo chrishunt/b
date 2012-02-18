@@ -1,3 +1,6 @@
+desc 'Default: Start jekyll server'
+task :default => 'jekyll:server'
+
 namespace :jekyll do
   desc 'Remove generated site'
   task :clean do
