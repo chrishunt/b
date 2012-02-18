@@ -67,12 +67,18 @@ a:hover {
 
 /* line 56, ../_sass/main.scss */
 #container {
+  margin: 0 auto;
+  width: 1070px;
+}
+
+/* line 61, ../_sass/main.scss */
+#content {
+  margin: 0 auto;
   position: relative;
   width: 800px;
+  padding: 50px;
   background: #fff;
   border-left: 2px solid #657b83;
   border-right: 2px solid #657b83;
   border-bottom: 2px solid #657b83;
-  margin: 0 auto;
-  padding: 50px;
 }
