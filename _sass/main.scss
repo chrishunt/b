@@ -1,12 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 
 body {
   font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
   background: #fdf6e3;
   color: #222;
+}
+
+code {
+  background: #fdf6e3;
+  color: #555;
+  padding: 5px;
+  line-height: 1.5em;
+
+  font: {
+    family: Inconsolata-g, Menlo, Monaco, 'Andale Mono', 'lucida console', 'Courier New', monospace;
+    size: 14px;
+  }
 }
 
 h1, h2 {
@@ -22,7 +31,7 @@ h1 {
 
 h2 {
   font-size: 28px;
-  line-height: 27px;
+  line-height: 28px;
   margin-bottom: 27px;
 }
 
@@ -33,27 +42,17 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: #dc322f;
-}
-
-a:hover {
-  color: #dc5654;
+  text-decoration: none;
+  &:hover { color: #dc5654; }
 }
 
 #container {
+  width: 800px;
   background: #fff;
   border-left: 2px solid #657b83;
   border-right: 2px solid #657b83;
   border-bottom: 2px solid #657b83;
-  width: 800px;
   margin: 0 auto;
   padding: 50px;
-}
-
-.code {
-  width: 750px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #002b36;
 }
