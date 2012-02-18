@@ -1,13 +1,21 @@
-desc 'Default: Start jekyll server'
-task :default => 'jekyll:server'
-
 desc 'Clean jekyll and compass build files'
 task :clean => ['jekyll:clean', 'compass:clean']
+
+desc 'Compile jekyll site and compass stylesheets'
+task :compile=> ['compass:compile', 'jekyll:compile']
+
+desc 'Default: Start jekyll server'
+task :default => 'jekyll:server'
 
 namespace :jekyll do
   desc 'Remove generated site'
   task :clean do
     system 'rm -rf _site'
+  end
+
+  desc 'Compile jekyll site'
+  task :compile do
+    system 'jekyll'
   end
 
   desc 'Start jekyll server'
