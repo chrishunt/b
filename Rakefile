@@ -16,17 +16,17 @@ end
 namespace :compass do
   desc 'Delete compass temporary files'
   task :clean do
-    system 'rm -rf css/*'
+    system 'rm -rf stylesheets/*'
   end
 
   desc 'Run the compass watch script'
   task :watch do
-    system 'compass watch'
+    system 'compass watch --sass-dir _sass'
   end
 
   desc 'Compile sass scripts'
   task :compile => [:clean] do
-    system 'compass compile'
+    system 'compass compile --sass-dir _sass'
   end
 end
 
