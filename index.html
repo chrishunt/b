@@ -5,7 +5,7 @@ title: B
 
   {% for page in site.posts limit:2  %}
     <div class='post'>
-      <h1><a href='/b/{{ page.url }}'>{{ page.title }}</a></h1>
+      {% include post_link.html %}
       {% include date.html %}
       {{ page.content }}
     </div>
