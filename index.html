@@ -1,25 +1,15 @@
 ---
-title: Thoughts
+title: B
 ---
-
 {% include header.html %}
 
-  {% for post in site.posts limit:2  %}
-
+  {% for page in site.posts limit:2  %}
     <div class='post'>
-      <h1><a href='/b/{{ post.url }}'>{{ post.title }}</a></h1>
-
-      <p class='date'>
-        {{ post.date | date: "%B %d, %Y" }} |
-        Chris Hunt |
-        <a href='mailto:c@chrishunt.co'>c@chrishunt.co</a>
-      </p>
-
-      {{ post.content }}
+      <h1><a href='/b/{{ page.url }}'>{{ page.title }}</a></h1>
+      {% include date.html %}
+      {{ page.content }}
     </div>
-
   {% endfor %}
 
   {% include archive_link.html %}
-
 {% include footer.html %}
