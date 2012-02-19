@@ -71,23 +71,14 @@ a {
 a:hover {
   color: #dc5654;
 }
-/* line 56, ../_sass/main.scss */
-a img {
-  border: 0;
-}
 
-/* line 61, ../_sass/main.scss */
-img {
-  border: 0;
-}
-
-/* line 67, ../_sass/main.scss */
+/* line 62, ../_sass/main.scss */
 #container {
   margin: 0 auto;
   width: 1070px;
 }
 
-/* line 72, ../_sass/main.scss */
+/* line 67, ../_sass/main.scss */
 #content {
   margin: 0 auto;
   position: relative;
@@ -99,65 +90,82 @@ img {
   border-bottom: 2px solid #657b83;
 }
 
-/* line 87, ../_sass/main.scss */
+/* line 82, ../_sass/main.scss */
 #avatar, #twitter, #github {
   position: absolute;
 }
 
-/* line 92, ../_sass/main.scss */
+/* line 87, ../_sass/main.scss */
 #twitter:hover, #github:hover {
   -moz-opacity: 0.9;
   opacity: 0.9;
 }
 
-/* line 95, ../_sass/main.scss */
+/* line 90, ../_sass/main.scss */
 #avatar {
   top: 25px;
   left: -80px;
 }
 
-/* line 96, ../_sass/main.scss */
+/* line 91, ../_sass/main.scss */
 #twitter {
   top: 144px;
   left: -56px;
 }
 
-/* line 97, ../_sass/main.scss */
+/* line 92, ../_sass/main.scss */
 #github {
   top: 319px;
   left: -56px;
 }
 
-/* line 103, ../_sass/main.scss */
+/* line 98, ../_sass/main.scss */
 .post {
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 10px dashed #eee;
 }
 
-/* line 109, ../_sass/main.scss */
+/* line 104, ../_sass/main.scss */
 .archive {
   font-size: 28px;
   text-align: center;
 }
 
-/* line 114, ../_sass/main.scss */
+/* line 109, ../_sass/main.scss */
 .date {
   color: #859900;
   font-size: 18px;
   margin-top: 2px;
   margin-bottom: 48px;
 }
-/* line 119, ../_sass/main.scss */
+/* line 114, ../_sass/main.scss */
 .date a {
   color: #859900;
 }
-/* line 121, ../_sass/main.scss */
+/* line 116, ../_sass/main.scss */
 .date a:hover {
   color: #8d9943;
 }
 
-/* line 125, ../_sass/main.scss */
+/* line 120, ../_sass/main.scss */
 .slim {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 127, ../_sass/main.scss */
+  body {
+    background: #fdf6e3;
+  }
+
+  /* line 128, ../_sass/main.scss */
+  #container {
+    width: 970px;
+  }
+
+  /* line 129, ../_sass/main.scss */
+  #content {
+    width: 700px;
+  }
 }

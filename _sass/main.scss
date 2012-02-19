@@ -53,12 +53,7 @@ a {
   color: #dc322f;
   text-decoration: none;
   &:hover { color: #dc5654; }
-  img {
-    border: 0;
-  }
 }
-
-img { border: 0; }
 
 // --------------
 // Container
@@ -123,3 +118,13 @@ img { border: 0; }
 }
 
 .slim { margin-bottom: 0; }
+
+// --------------
+// Small Displays
+// --------------
+
+@media screen and (max-width: 980px) {
+  body { background: #fdf6e3; }
+  #container { width: 970px; }
+  #content { width: 700px; }
+}

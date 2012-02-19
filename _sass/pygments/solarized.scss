@@ -3,6 +3,7 @@ pre {
   width: 750px;
   margin: 20px auto;
   padding: 20px;
+  overflow: scroll;
 
   code {
     background: #002b36;
@@ -10,6 +11,8 @@ pre {
     font-weight: normal;
   }
 }
+
+@media screen and (max-width: 980px) { pre { width: 650px; } }
 
 .hll { background-color: #ffffcc }
 .lineno { color: #586e74 }
