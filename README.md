@@ -1,5 +1,5 @@
-b
-=
+b - Solarized Edition
+=====================
 
 [chrishunt.co/b](http://chrishunt.co/b)
 
