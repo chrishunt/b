@@ -2,7 +2,8 @@
 
 body {
   font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
-  background: #fdf6e3 url('/b/images/background.jpg') repeat left top;
+  //background: #fdf6e3 url('/b/images/background.jpg') repeat left top;
+  background: #fdf6e3;
   color: #222;
 }
 
@@ -124,7 +125,6 @@ a {
 // --------------
 
 @media screen and (max-width: 980px) {
-  body { background: #fdf6e3; }
   #container { width: 970px; }
   #content { width: 700px; }
 }
