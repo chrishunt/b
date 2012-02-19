@@ -82,3 +82,10 @@ a:hover {
   border-right: 2px solid #657b83;
   border-bottom: 2px solid #657b83;
 }
+
+/* line 72, ../_sass/main.scss */
+.post {
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  border-bottom: 2px dotted #eee;
+}

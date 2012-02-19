@@ -1,0 +1,16 @@
+---
+title: Thoughts
+---
+
+{% include header.html %}
+
+  {% for post in site.posts limit:2  %}
+
+    <div class='post'>
+      <h1>{{ post.title }}</h1>
+      {{ post.content }}
+    </div>
+
+  {% endfor %}
+
+{% include footer.html %}

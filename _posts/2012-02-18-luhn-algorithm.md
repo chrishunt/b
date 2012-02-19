@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Luhn Algorithm
+title: This is a potentially long title. I want to see how it looks.
 ---
 
 [wiki]: http://en.wikipedia.org/wiki/Luhn "Wikipedia: Luhn Algorithm"
