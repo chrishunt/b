@@ -32,7 +32,7 @@ h1 a, h2 a, h3 a {
 }
 /* line 26, ../_sass/main.scss */
 h1 a:hover, h2 a:hover, h3 a:hover {
-  color: #dc322f;
+  color: #555;
 }
 
 /* line 30, ../_sass/main.scss */
@@ -112,14 +112,21 @@ a:hover {
 
 /* line 92, ../_sass/main.scss */
 .date {
-  color: #ccc;
-  font-size: 28px;
-  font-style: italic;
-  margin-top: 5px;
+  color: #859900;
+  font-size: 18px;
+  margin-top: 2px;
   margin-bottom: 48px;
 }
+/* line 97, ../_sass/main.scss */
+.date a {
+  color: #859900;
+}
+/* line 99, ../_sass/main.scss */
+.date a:hover {
+  color: #8d9943;
+}
 
-/* line 100, ../_sass/main.scss */
+/* line 103, ../_sass/main.scss */
 .slim {
   margin-bottom: 0;
 }

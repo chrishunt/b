@@ -9,7 +9,11 @@ title: Thoughts
     <div class='post'>
       <h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
 
-      <p class='date'> {{ post.date | date: "%B %d, %Y" }} </p>
+      <p class='date'>
+        {{ post.date | date: "%B %d, %Y" }} |
+        Chris Hunt |
+        <a href='mailto:c@chrishunt.co'>c@chrishunt.co</a>
+      </p>
 
       {{ post.content }}
     </div>
