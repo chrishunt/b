@@ -18,21 +18,30 @@ code {
   }
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-rendering: optimizelegibility;
   font-weight: bold;
+  a {
+    color: #222;
+    &:hover { color: #dc322f; }
+  }
 }
 
 h1 {
   font-size: 48px;
   line-height: 48px;
-  margin-bottom: 48px;
 }
 
 h2 {
   font-size: 28px;
   line-height: 28px;
   margin-bottom: 27px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
 }
 
 p {
@@ -71,6 +80,21 @@ a {
 
 .post {
   padding-bottom: 30px;
-  margin-bottom: 50px;
-  border-bottom: 2px dotted #eee;
+  margin-bottom: 30px;
+  border-bottom: 10px dashed #eee;
 }
+
+.archive {
+  font-size: 28px;
+  text-align: center;
+}
+
+.date {
+  color: #ccc;
+  font-size: 28px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 48px;
+}
+
+.slim { margin-bottom: 0; }

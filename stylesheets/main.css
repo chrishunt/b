@@ -22,56 +22,70 @@ code {
 }
 
 /* line 21, ../_sass/main.scss */
-h1, h2 {
+h1, h2, h3 {
   text-rendering: optimizelegibility;
   font-weight: bold;
 }
-
+/* line 24, ../_sass/main.scss */
+h1 a, h2 a, h3 a {
+  color: #222;
+}
 /* line 26, ../_sass/main.scss */
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: #dc322f;
+}
+
+/* line 30, ../_sass/main.scss */
 h1 {
   font-size: 48px;
   line-height: 48px;
-  margin-bottom: 48px;
 }
 
-/* line 32, ../_sass/main.scss */
+/* line 35, ../_sass/main.scss */
 h2 {
   font-size: 28px;
   line-height: 28px;
   margin-bottom: 27px;
 }
 
-/* line 38, ../_sass/main.scss */
+/* line 41, ../_sass/main.scss */
+h3 {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+/* line 47, ../_sass/main.scss */
 p {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 27px;
 }
 
-/* line 44, ../_sass/main.scss */
+/* line 53, ../_sass/main.scss */
 a {
   color: #dc322f;
   text-decoration: none;
 }
-/* line 47, ../_sass/main.scss */
+/* line 56, ../_sass/main.scss */
 a:hover {
   color: #dc5654;
 }
 
-/* line 50, ../_sass/main.scss */
+/* line 59, ../_sass/main.scss */
 #avatar {
   position: absolute;
   top: 25px;
   left: -80px;
 }
 
-/* line 56, ../_sass/main.scss */
+/* line 65, ../_sass/main.scss */
 #container {
   margin: 0 auto;
   width: 1070px;
 }
 
-/* line 61, ../_sass/main.scss */
+/* line 70, ../_sass/main.scss */
 #content {
   margin: 0 auto;
   position: relative;
@@ -83,9 +97,29 @@ a:hover {
   border-bottom: 2px solid #657b83;
 }
 
-/* line 72, ../_sass/main.scss */
+/* line 81, ../_sass/main.scss */
 .post {
   padding-bottom: 30px;
-  margin-bottom: 50px;
-  border-bottom: 2px dotted #eee;
+  margin-bottom: 30px;
+  border-bottom: 10px dashed #eee;
+}
+
+/* line 87, ../_sass/main.scss */
+.archive {
+  font-size: 28px;
+  text-align: center;
+}
+
+/* line 92, ../_sass/main.scss */
+.date {
+  color: #ccc;
+  font-size: 28px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 48px;
+}
+
+/* line 100, ../_sass/main.scss */
+.slim {
+  margin-bottom: 0;
 }

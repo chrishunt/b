@@ -1,0 +1,16 @@
+---
+title: Archive
+---
+
+{% include header.html %}
+
+  {% for post in site.posts %}
+
+    <div class='post'>
+      <h1> <a href='{{ post.url }}'>{{ post.title }}</a> </h1>
+      <p class='date slim'> {{ post.date | date: "%B %d, %Y" }} </p>
+    </div>
+
+  {% endfor %}
+
+{% include footer.html %}
