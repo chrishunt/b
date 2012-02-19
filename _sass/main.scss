@@ -11,7 +11,6 @@ code {
   color: #555;
   padding: 5px;
   line-height: 1.5em;
-
   font: {
     family: Inconsolata-g, Menlo, Monaco, 'Andale Mono', 'lucida console', 'Courier New', monospace;
     size: 14px;
@@ -56,11 +55,9 @@ a {
   &:hover { color: #dc5654; }
 }
 
-#avatar {
-  position: absolute;
-  top: 25px;
-  left: -80px;
-}
+// --------------
+// Container
+// --------------
 
 #container {
   margin: 0 auto;
@@ -77,6 +74,26 @@ a {
   border-right: 2px solid #657b83;
   border-bottom: 2px solid #657b83;
 }
+
+// --------------
+// Header
+// --------------
+
+#avatar, #twitter, #github {
+  position: absolute;
+}
+
+#twitter, #github {
+  &:hover { -moz-opacity: 0.9; opacity: 0.9; }
+}
+
+#avatar  { top: 25px;  left: -80px; }
+#twitter { top: 144px; left: -56px; }
+#github  { top: 319px; left: -56px; }
+
+// --------------
+// Posts
+// --------------
 
 .post {
   padding-bottom: 30px;
