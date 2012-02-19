@@ -7,7 +7,7 @@
 /* line 3, ../_sass/main.scss */
 body {
   font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
-  background: #fdf6e3;
+  background: #fdf6e3 url("/b/images/background.jpg") repeat left top;
   color: #222;
 }
 
