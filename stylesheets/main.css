@@ -152,3 +152,42 @@ a:hover {
 .slim {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 770px) {
+  /* line 128, ../_sass/main.scss */
+  body {
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+
+  /* line 134, ../_sass/main.scss */
+  #container {
+    width: 100%;
+  }
+
+  /* line 138, ../_sass/main.scss */
+  #content {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    border: none;
+  }
+
+  /* line 145, ../_sass/main.scss */
+  pre {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  /* line 150, ../_sass/main.scss */
+  code {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 155, ../_sass/main.scss */
+  #avatar, #twitter, #github {
+    display: none;
+  }
+}
