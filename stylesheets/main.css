@@ -152,15 +152,3 @@ a:hover {
 .slim {
   margin-bottom: 0;
 }
-
-@media screen and (max-width: 980px) {
-  /* line 128, ../_sass/main.scss */
-  #container {
-    width: 970px;
-  }
-
-  /* line 129, ../_sass/main.scss */
-  #content {
-    width: 700px;
-  }
-}

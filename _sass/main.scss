@@ -119,12 +119,3 @@ a {
 }
 
 .slim { margin-bottom: 0; }
-
-// --------------
-// Small Displays
-// --------------
-
-@media screen and (max-width: 980px) {
-  #container { width: 970px; }
-  #content { width: 700px; }
-}

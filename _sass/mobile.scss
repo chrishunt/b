@@ -1,0 +1,36 @@
+// ----------
+// Small
+// ----------
+
+@media screen and (max-width: 770px){
+  body {
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  #content {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    border: none;
+  }
+
+  pre {
+    padding:0;
+    width: 100%;
+  }
+
+  code {
+    margin:0;
+    padding:0;
+  }
+
+  #avatar, #twitter, #github {
+    display: none;
+  }
+}
