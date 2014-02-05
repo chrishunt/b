@@ -1,6 +1,3 @@
-b - Solarized Edition
-=====================
+# Blog Archive
 
-[chrishunt.co/b](http://chrishunt.co/b)
-
-![Screenshot](https://github.com/chrishunt/b/raw/gh-pages/images/screenshot.jpg)
+Posted at [b.chrishunt.co](http://b.chrishunt.co/)
