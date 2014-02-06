@@ -231,8 +231,6 @@ There are over 43 quintillion legal positions of the Rubik's Cube.
 - If we stacked 43 quintillion pennies, the stack would be tall enough to reach
   the sun and return to the earth **four thousand billion times**.
 
-Follow [@chrishunt][chrishunt] for updates.
-
 [chrishunt]: https://twitter.com/chrishunt
 [factorial]: http://en.wikipedia.org/wiki/Factorial
 [permutation]: http://en.wikipedia.org/wiki/Permutation
