@@ -23,7 +23,7 @@ marbles, then we would find another permutation.
 > "A **permutation** of a set of objects is an arrangement of those objects
 > into a particular order." - wikipedia
 
-In order to count how many permutations we have for the Rubik's Cube, we will
+In order to count how many positions we have for the Rubik's Cube, we will
 first learn how to count permutations for our set of marbles.
 
 ## Counting Permutations
@@ -57,121 +57,123 @@ by calculating **three factorial**.
 
 A marble does not have an orientation. It cannot be flipped or rotated. It
 always appears the same no matter how it's placed on the table. When we counted
-the permutations for our marbles, all we cared about was their position.
+the the number of positions for our marbles, all we cared about was their
+permutation.
 
-What if we wanted to calculate the total number of permutations for a set of
+What if we wanted to calculate the total number of positions for a set of
 **three playing cards**?
 
 Initially, the problem looks the same. We have three cards and know that they
-can be arranged in **three factorial** different positions, just like the
+can be arranged in **three factorial** different permutations, just like the
 marbles.
 
 ![](images/04-cards.png)
 
 Playing cards, however, *do* have an orientation. We can flip any of the three
-cards and we'll end up with a *different* permutation. In order to calculate
-the total number of permutations, we'll need to factor in **both the position
-and orientation** of each card.
+cards and we'll end up with a *different* position. In order to calculate the
+total number of positions, we'll need to factor in **both the permutation and
+orientation** of each card.
 
 ![](images/05-cards-flipped.png)
 
-We've already learned how to calculate the total number of positions as **three
-factorial**. Next, we'll see how to calculate the total number of orientations
-for each position.
+We've already learned how to calculate the total number of permutations as
+**three factorial**. Next, we'll see how to calculate the total number of
+orientations for each position.
 
 We have **three playing cards** and each card has **two possible
 orientations**, face *up* or face *down*. For each of our **three factorial
-positions**, we are able to reach all of these orientations.
+permutations**, we are able to reach all of these orientations.
 
 ![](images/06-all-card-permutations.png)
 
-How many total orientations are there for one position of our set of three
+How many total orientations are there for one permutation of our set of three
 cards? We could count them using the image above, but it's faster to calculate.
 
 We have **three playing cards** and each card has **two orientations**. The
-total number of orientations for one position of the cards can be calculated as
-the **third power of two**.
+total number of orientations for one permutation of the cards can be calculated
+as the **third power of two**.
 
 ![](images/07-third-power-of-two.png)
 
-## Total Permutations for Three Cards
+## Total Positions for Three Cards
 
-We've determined the total number of positions for our cards is **three
-factorial** and the total number of orientations for each of those positions is
-the **third power of two**. Calculating the number of permutations is done by
-multiplying the number of positions by the number of orientations.
+We've determined the total number of permutations for our cards is **three
+factorial** and the total number of orientations for each of those permutations
+is the **third power of two**. Calculating the number of positions is done by
+multiplying the number of permutations by the number of orientations.
 
 ![](images/08-card-total-permutations.png)
 
-A set of three playing cards has 48 possible permutations when all positions
+A set of three playing cards has 48 possible positions when all permutations
 and orientations are considered.
 
 # Understanding the Rubik's Cube
 
 We now have all the knowledge we need to calculate the total number of
-permutations for the Rubik's Cube. We know that, given a set of *n* items with
-*p* orientations, the total number of permutations for that set of items can be
+positions for the Rubik's Cube. We know that, given a set of *n* items with *p*
+orientations, the total number of positions for that set of items can be
 calculated.
 
 ![](images/09-equation-total-perms.png)
 
 Once we understand how the Rubik's Cube is built, we can apply this formula and
-calculate the total number of permutations.
+calculate the total number of positions.
 
 ## Anatomy of a Rubik's Cube
 
 The Rubik's Cube has six sides and each side has nine squares, but this is not
 a good way to think about the cube when trying to count the number of
-permutations. Instead, we need to understand [how the cube is built][video],
-what types of pieces there are, and how each piece moves around the puzzle.
+positions. Instead, we need to understand [how the cube is built][video], what
+types of pieces there are, and how each piece moves around the puzzle.
 
 [![](images/10-how-cube-works.png)][video]
 
 It's important to understand that the Rubik's Cube has **three types of
-pieces**.  Each behaves differently as we turn the sides of the cube. We'll
-keep this in mind as we do our calculations.
+pieces**. Each behaves differently as we turn the sides of the cube. We'll keep
+this in mind as we do our calculations.
 
-# Calculating Permutations
+# Calculating Positions
 
-The total number of permutations for the Rubik's Cube can be calculated by
-looking at each of the three types of pieces separately.
+The total number of positions for the Rubik's Cube can be calculated by looking
+at each of the three types of pieces separately.
 
-## Center Permutations
+## Center Positions
 
 There are six center pieces and they are located at the center of each face of
 the Rubik's Cube. [As we learned][video], the center pieces are part of a fixed
 axle that does not move. All the other pieces move *around* the center pieces.
-This means that the center pieces have **one position** and **one
+This means that the center pieces have **one permutation** and **one
 orientation**.
 
-Intuitively we know that something with *one* position and *one* orientation
-has a **single permutation**, but we can verify by plugging these numbers into
-our equation.
+Intuitively we know that something with *one* permutations and *one*
+orientation has a **single position**, but we can verify by plugging these
+numbers into our equation.
 
 ![](images/11-center-permutations.png)
 ![](images/12-centers.png)
 
-## Corner Permutations
+## Corner Positions
 
-Every cube has **eight corners** and the Rubik's Cube is no exception. Unlike
-the centers, each corner piece can be moved and rotated. Since we have eight
-corners, our total number of positions for these pieces is **eight factorial**.
+Every three dimensional cube has **eight corners** and the Rubik's Cube is no
+exception. Unlike the centers, each corner piece can be moved and rotated.
+Since we have eight corners, our total number of permutations for these pieces
+is **eight factorial**.
 
 To figure out the number of orientations for a single piece, we need to count
 the number of stickers. A corner pieces has three stickers, so it must have
 **three orientations**. As we learned, this means the total number of
 orientations for each position of the corners is the **eighth power of three**.
 
-With these numbers, we can calculate the total number of permutations for the
+With these numbers, we can calculate the total number of positions for the
 corner pieces.
 
 ![](images/13-corner-perms.png)
 ![](images/14-corners.png)
 
-## Edge Permutations
+## Edge Positions
 
 A Rubik's Cube has **twelve edge pieces** and each piece may be moved or
-flipped.  We can calculate the total number of positions for these pieces as
+flipped.  We can calculate the total number of permutations for these pieces as
 **twelve factorial**.
 
 We can use the same method as we did for the corners to determine the number of
@@ -179,45 +181,45 @@ orientations for a single edge piece. An edge piece has two stickers, so it
 must have **two orientations**. This means the total number of orientations for
 each position of the edges is the **twelfth power of two**.
 
-With these numbers, we can calculate the total number of permutations for the
-edge pieces.
+With these numbers, we can calculate the total number of positions for the edge
+pieces.
 
 ![](images/15-edge-perms.png)
 ![](images/16-edges.png)
 
 ## Putting It All Together
 
-We've calculated the number of permutations for the center pieces, the corner
-pieces, and the edge pieces. The final step to finding the total permutations
-for the entire Rubik's Cube is multiplying these numbers together.
+We've calculated the number of positions for the center pieces, the corner
+pieces, and the edge pieces. The final step to finding the total positions for
+the entire Rubik's Cube is multiplying these numbers together.
 
 ![](images/17-total-cube-perms.png)
 
 ## But Wait, There's More
 
-We have successfully calculated the number of permutations, but we made one
-fatal assumption; our calculations assume that we can take the cube apart. This
-is *cheating*. Not every permutation of the Rubik's Cube is possible if we
-limit ourselves to turning the sides.
+We have successfully calculated the number of positions, but we made one fatal
+assumption; our calculations assume that we can take the cube apart. This is
+*cheating*. Not every position of the Rubik's Cube is possible if we limit
+ourselves to turning the sides.
 
 > "there is no sequence of moves that will swap a single pair of pieces or
 > rotate a single corner or edge cube" - wikipedia
 
 Because of the limitations of the Rubik's Cube, only [**1 in 12**][rubiks-cube]
-of every permutation is reachable by turning the sides of the cube. We can
-factor this in to our equation and settle on the total number of *legal*
-permutations of the Rubik's Cube.
+of every position is reachable by turning the sides of the cube. We can factor
+this in to our equation and settle on the total number of *legal* positions of
+the Rubik's Cube.
 
 ![](images/18-total-legal-cube-perms.png)
 
 # How Large Is That?
 
-There are over 43 quintillion legal permutations of the Rubik's Cube.
+There are over 43 quintillion legal positions of the Rubik's Cube.
 
 ![](images/19-big-number.png)
 
-- It would take **thirteen hundred million years** to see every permutation if
-  you were able to view one thousand per second.
+- It would take **thirteen hundred million years** to see every position if you
+  were able to view one thousand per second.
 - If we stacked 43 quintillion pennies, the stack would be tall enough to reach
   the sun and return to the earth **four thousand billion times**.
 
