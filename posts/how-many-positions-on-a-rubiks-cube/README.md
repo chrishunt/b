@@ -154,10 +154,10 @@ numbers into our equation.
 
 ## Corner Positions
 
-Every cube has **eight corners** and the Rubik's Cube is no exception. Unlike
-the centers, each corner piece can be moved and rotated.  Since we have eight
-corners, our total number of permutations for these pieces is **eight
-factorial**.
+Every three dimensional cube has **eight corners** and the Rubik's Cube is no
+exception. Unlike the centers, each corner piece can be moved and rotated.
+Since we have eight corners, our total number of permutations for these pieces
+is **eight factorial**.
 
 To figure out the number of orientations for a single piece, we need to count
 the number of stickers. A corner pieces has three stickers, so it must have
