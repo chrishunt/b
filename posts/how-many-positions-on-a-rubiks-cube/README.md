@@ -53,6 +53,8 @@ by calculating **three factorial**.
 
 ![](images/03-three-factorial.png)
 
+---
+
 # Getting Oriented
 
 A marble does not have an orientation. It cannot be flipped or rotated. It
@@ -107,6 +109,8 @@ multiplying the number of permutations by the number of orientations.
 A set of three playing cards has 48 possible positions when all permutations
 and orientations are considered.
 
+---
+
 # Understanding the Rubik's Cube
 
 We now have all the knowledge we need to calculate the total number of
@@ -131,6 +135,8 @@ types of pieces there are, and how each piece moves around the puzzle.
 It's important to understand that the Rubik's Cube has **three types of
 pieces**. Each behaves differently as we turn the sides of the cube. We'll keep
 this in mind as we do our calculations.
+
+---
 
 # Calculating Positions
 
@@ -211,6 +217,8 @@ this in to our equation and settle on the total number of *legal* positions of
 the Rubik's Cube.
 
 ![](images/18-total-legal-cube-perms.png)
+
+---
 
 # How Large Is That?
 
