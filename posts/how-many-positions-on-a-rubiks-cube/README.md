@@ -229,7 +229,7 @@ There are over 43 quintillion legal positions of the Rubik's Cube.
 - It would take **thirteen hundred million years** to see every position if you
   were able to view one thousand per second.
 - If we stacked 43 quintillion pennies, the stack would be tall enough to reach
-  the sun and return to the earth **four thousand billion times**.
+  the sun and return to the earth over **two hundred and nineteen thousand times**.
 
 [chrishunt]: https://twitter.com/chrishunt
 [factorial]: http://en.wikipedia.org/wiki/Factorial
